@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { MapPin, Navigation, CreditCard, CheckCircle } from 'lucide-react';
 
@@ -31,7 +30,7 @@ const HowItWorks = () => {
       icon: <MapPin className="w-8 h-8 text-blue-500" />,
       title: 'GPS Tracking in Vehicles',
       description:
-        'Our system uses precise GPS technology to track your vehicle's position when you travel through toll zones.',
+        "Our system uses precise GPS technology to track your vehicle's position when you travel through toll zones.",
       delay: 200,
     },
     {
