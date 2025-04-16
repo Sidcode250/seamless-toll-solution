@@ -9,7 +9,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-indigo-900 overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 bg-[url('/smart-highway.jpg')] bg-cover bg-center"></div>
+        <div className="absolute inset-0">
+          <img 
+            src="/smart-highway.svg" 
+            alt="Smart Highway" 
+            className="w-full h-full object-cover"
+          />
+        </div>
         
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -17,11 +23,11 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center px-4"
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
             Seamless, Smart, and Automated Toll Collection
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-8">
-            Experience the future of toll collection with our GPS-based system
+          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+            Experience the future of toll collection with our GPS-based system. No more waiting in lines, no more cash payments.
           </p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
             Get Started <ArrowRight className="ml-2 h-5 w-5" />
